@@ -1,0 +1,16 @@
+import(methods, graphics)
+
+export(
+ "dksTrain",
+ "dksWeights",
+ "dksSelectGenes",
+ "dksClassify",
+ "dksPerm",
+ "KS",
+ "dksCustomClass"
+)
+
+importClasses(methods,base)
+
+exportClasses(DKSGeneScores, DKSClassifier, DKSPredicted)
+exportMethods(plot,show,summary)

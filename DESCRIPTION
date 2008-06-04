@@ -1,0 +1,21 @@
+Package: dualKS
+Type: Package
+Title: Dual KS Discriminant Analysis and Classification
+Version: 1.0.0
+Date: 2008-04-25
+Author: Eric J. Kort, Yarong Yang
+Maintainer: Eric J. Kort <eric.kort@vai.org>
+Depends: R (>= 2.6.0), Biobase (>= 1.15.0), affy, methods
+Description: 	This package implements a Kolmogorov Smirnov rank-sum based 
+	algorithm for training (i.e. discriminant analysis--identification 
+	of genes that discriminate between classes) and classification 
+	of gene expression data sets.  One of the chief strengths of 
+	this approach is that it is amenable to the "multiclass" problem.
+	That is, it can discriminate between more than 2 classes.
+Collate: AllClasses.R summary-methods.R plot-methods.R show-methods.R
+		dksClassify.R dksCustomClass.R dksPerm.R dksSelectGenes.R 
+		dksToGeneSet.R dksTrain.R dksWeights.R KS.R makeClassifier.R predictClass.R 
+		rKS.R rKSScan.R
+License: LGPL (>= 2.0)
+biocViews: Microarray, Statistics
+		
