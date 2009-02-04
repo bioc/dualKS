@@ -23,10 +23,12 @@
 	gscores.down=new("matrix"))}
 }
 \section{Slots}{
+ \describe{
   \item{\code{gscores.up}:}{A matrix of gene scores, one column per 
 	class}
   \item{\code{gscores.down}:}{A matrix of gene scores, one column per 
 	class}
+ }
 }
 
 \author{Eric J. Kort}
