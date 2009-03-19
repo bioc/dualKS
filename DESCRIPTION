@@ -1,7 +1,7 @@
 Package: dualKS
 Type: Package
 Title: Dual KS Discriminant Analysis and Classification
-Version: 1.3.1
+Version: 1.3.2
 Date: 2008-04-25
 Author: Eric J. Kort, Yarong Yang
 Maintainer: Eric J. Kort <eric.kort@vai.org>
@@ -17,5 +17,5 @@ Collate: AllClasses.R summary-methods.R plot-methods.R show-methods.R
 		dksToGeneSet.R dksTrain.R dksWeights.R KS.R makeClassifier.R predictClass.R 
 		rKS.R rKSScan.R
 License: LGPL (>= 2.0)
-biocViews: Microarray, Statistics
+biocViews: Microarray, Bioinformatics
 		
