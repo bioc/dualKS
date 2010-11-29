@@ -10,7 +10,5 @@ export(
  "dksCustomClass"
 )
 
-importClasses(methods,base)
-
 exportClasses(DKSGeneScores, DKSClassifier, DKSPredicted)
 exportMethods(plot,show,summary)
