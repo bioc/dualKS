@@ -1,7 +1,7 @@
 Package: dualKS
 Type: Package
 Title: Dual KS Discriminant Analysis and Classification
-Version: 1.15.0
+Version: 1.16.0
 Date: 2008-04-25
 Author: Eric J. Kort, Yarong Yang
 Maintainer: Eric J. Kort <eric.kort@vai.org>
