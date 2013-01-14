@@ -1,10 +1,10 @@
 Package: dualKS
 Type: Package
 Title: Dual KS Discriminant Analysis and Classification
-Version: 1.19.1
+Version: 1.19.2
 Date: 2008-04-25
 Author: Eric J. Kort, Yarong Yang
-Maintainer: Eric J. Kort <eric.kort@vai.org>
+Maintainer: Yarong Yang <yarong.yang@ndsu.edu>
 Depends: R (>= 2.6.0), Biobase (>= 1.15.0), affy, methods
 Description: 	This package implements a Kolmogorov Smirnov rank-sum based 
 	algorithm for training (i.e. discriminant analysis--identification 

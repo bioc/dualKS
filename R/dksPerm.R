@@ -35,15 +35,14 @@ function(eset, class, n=100, samples=100, type="up", rescale=FALSE, verbose=FALS
         scores <- rbind(scores, pr@scoreMatrix)
     }        
 
-    if(rescale) {    
+ if(rescale) {
         gammaLL <- function(params) {
             -sum(dgamma(data, shape=exp(params[1]), rate=exp(params[2]), log=TRUE))
         }
     } else {
         gammaLL <- function(params) {
-            -sum(dgamma(data, shape=exp(params[1]), rate=exp(params[2]), 
-                scale=exp(params[3]), log=TRUE))
-        }    
+            -sum(dgamma(data, shape=exp(params[1]), rate=exp(params[2]), log=TRUE))
+        }
     }
 
     data <- as.vector(scores[-1,])
@@ -57,12 +56,13 @@ function(eset, class, n=100, samples=100, type="up", rescale=FALSE, verbose=FALS
     rate <- 1/scale
     if (rescale) {
         opt <- optim(c(log(shape), log(rate)), gammaLL)
-        cmd <- paste("f <- function(x) { 1 - pgamma(x, shape=", exp(opt$par[1]), 
+        cmd <- paste("f <- function(x) { 1 - pgamma(x, shape=", exp(opt$par[1]),
             ", rate=", exp(opt$par[2]), ")}", sep="")
     } else {
-        opt <- optim(c(log(shape), log(rate), log(scale)), gammaLL)    
-        cmd <- paste("f <- function(x) { 1 - pgamma(x, shape=", exp(opt$par[1]), 
-            ", rate=", exp(opt$par[2]), ", scale=", exp(opt$par[3]), ")}", sep="")
+        opt <- optim(c(log(shape), log(rate)), gammaLL)
+        cmd <- paste("f <- function(x) { 1 - pgamma(x, shape=", exp(opt$par[1]),
+            ", rate=", exp(opt$par[2]), ")}", sep="")
     }
     return(eval(parse(text=cmd)))
+
 }
