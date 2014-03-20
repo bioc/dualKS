@@ -1,6 +1,6 @@
 `dksToGeneSet` <-
 function(data, n=50) {
-    .rank <- function(x) { rank(-x, ties="first") }
+    .rank <- function(x) { rank(-x, ties.method="first") }
     .dup <- function(x, n) { sum(x <= n) > 1 }
     .match <- function(x, n) { sum(x <= n) == 1 }
     .class <- function(x, n) { which(x <= n) }

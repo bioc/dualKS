@@ -1,4 +1,6 @@
 import(methods, graphics)
+import(Biobase)
+import(affy)
 
 export(
  "dksTrain",
